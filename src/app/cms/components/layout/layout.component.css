@@ -1,0 +1,64 @@
+*:root{
+  --Primary_Pink: #E97777;
+  --Secundary_Pink: #FF9F9F;
+  --Sub-Primary_Yellow: #FCDDB0;
+  --sub_Secondary_Yellow: #FFFAD7;
+  --White_Backgroud: #f8f7ee;
+
+}
+
+div {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "header header header" "nav content content";
+}
+div header {
+  grid-area: header;
+  background-color:#E97777;
+  color: white;
+  padding: 1em;
+  box-shadow: 1px 2px 4px 0 #000;
+  border-bottom: 1px solid rgba(21, 99, 157, 0.16);
+}
+hr{
+  border-color: #f3f8fb;
+  color: #f3f8fb;
+}
+div nav {
+  grid-area: nav;
+  border-right: 1px solid rgba(21, 99, 157, 0.16);
+  background-color:#FF9F9F;
+}
+div nav a {
+  margin: 0;
+  font-size: 25px;
+  padding: 1em;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+div main {
+  grid-area: content;
+  background-color: #f3f8fb;
+  padding: 1em;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+}
+.header button {
+  background-color: #f3f8fb;
+  border: none;
+  height: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.header button a{
+  text-decoration: none;
+
+
+}

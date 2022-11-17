@@ -1,0 +1,93 @@
+*:root{
+  --Primary_Pink: #E97777;
+  --Secundary_Pink: #FF9F9F;
+  --Sub-Primary_Yellow: #FCDDB0;
+  --sub_Secondary_Yellow: #FFFAD7;
+  --White_Backgroud: #f8f7ee;
+
+}
+.card{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  position: fixed;
+
+}
+.card svg{
+  margin-top: 190px;
+  z-index: -1;
+  position: static;
+  height: 90vh;
+  justify-self: center;
+}
+.main-login{
+  grid-column: 2/3;
+
+
+}
+.tittle-login{
+  color: #E97777;
+  font-size: 45px;
+  grid-row: 1/2;
+  text-align: center;
+  font-weight: bold;
+}
+.main-login p{
+  margin-top: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+.form-group {
+  margin-top: 27px;
+  text-align: center;
+  color: #E97777;
+  font-size: 30px;
+}
+.form-control{
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 40px;
+  height: 40px;
+  border: 1px solid #E97777;
+
+}
+.flex{
+  display: flex;
+  justify-content: center;
+}
+.btn{
+  background-color: #E97777;
+
+  height: 50px;
+  width:250px;
+  border-radius: 40px;
+  font-size: 24px ;
+  color: #f8f7ee;
+  text-align: center;
+  margin-top: 30px ;
+  border: 1px solid #f8f7ee;
+}
+.flex button:hover{
+  background-color: #FF9F9F;
+}
+.flex button:active{
+  background-color: #E97777;
+}
+.p-login{
+  margin-top: 47px;
+  color: #f8f7ee;
+}
+.p-login a{
+  margin-left: 15px;
+  text-decoration: none;
+  color:#E97777;
+  background-color: #f8f7ee;
+  border-radius: 10px;
+}
+.p-login a:hover{
+  color:#f8f7ee;
+  background-color:#FF9F9F;
+}
+
+

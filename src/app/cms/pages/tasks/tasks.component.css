@@ -1,0 +1,104 @@
+*:root{
+  --Primary_Pink: #E97777;
+  --Secundary_Pink: #FF9F9F;
+  --Sub-Primary_Yellow: #FCDDB0;
+  --sub_Secondary_Yellow: #FFFAD7;
+  --White_Backgroud: #f8f7ee;
+}
+.products-main{
+  display: grid;
+  grid-template-areas: 'input '
+                        'table  ';
+}
+.group-input{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.nuevo{
+  grid-area: "input";
+  justify-self: center;
+
+}
+.buscar{
+  grid-area: "buscar";
+  justify-self: center;
+}
+.container-table{
+
+  margin-top: 50px;
+  margin-left: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  grid-area: "table";
+  width:100vh;
+  height:50vh;
+  overflow: scroll;
+
+
+}
+.tittle{
+  color:#E97777;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+.tabla{
+  background-color: #f6c2c2;
+  border: 1 solid #000;
+}
+.inicio th{
+
+
+  margin-bottom: 20px;
+  text-align: center;
+  color: #f8f7ee;
+  font-size: 30px;
+
+  background-color: #E97777;
+}
+.tabla td{
+  text-align: center;
+  font-size: 25px;
+  text-align:center;
+}
+.form-control {
+  text-align: center;
+  font-size: 20px;
+}
+.form-control input{
+  width: 50vh;
+  background-color: #f8c7c7;
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.group-input button{
+  background-color: #E97777;
+  height: 40px;
+  width: 100px;
+  color: #f8f7ee;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+
+}
+.group-input button:hover{
+  background-color: #FF9F9F;
+}
+.group-input button:active{
+  background-color: #E97777;
+}
+
+
+
+

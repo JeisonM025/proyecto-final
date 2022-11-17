@@ -1,0 +1,48 @@
+*:root{
+  --Primary_Pink: #E97777;
+  --Secundary_Pink: #FF9F9F;
+  --Sub-Primary_Yellow: #FCDDB0;
+  --sub_Secondary_Yellow: #FFFAD7;
+  --White_Backgroud: #f8f7ee;
+
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: fixed;
+
+}
+.profile{
+  margin-top: 100px;
+  grid-column: 2/3;
+  justify-self: center;
+
+}
+.profile h1{
+  text-align: center;
+  font-size: 40px;
+  color:#E97777 ;
+}
+.profile p{
+  text-align: center;
+  font-size: 30px;
+}
+svg{
+  margin-top: 200px;
+  z-index: -1;
+  position: static;
+  height: 90vh;
+  justify-self: center;
+}
+.profile a{
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  color: #E97777;
+}
+.profile a:hover{
+  color: #FF9F9F;
+}
+.profile a:active{
+  color: #E97777;
+}

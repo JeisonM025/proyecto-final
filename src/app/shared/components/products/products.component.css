@@ -1,0 +1,118 @@
+*:root{
+  --Primary_Pink: #E97777;
+  --Secundary_Pink: #FF9F9F;
+  --Sub-Primary_Yellow: #FCDDB0;
+  --sub_Secondary_Yellow: #FFFAD7;
+  --White_Backgroud: #f8f7ee;
+
+}
+.products--grid {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+.button-more{
+  display: flex;
+  margin-top: 40px;
+}
+.button-more button{
+  background-color:#E97777 ;
+  border: 1px solid #f8f7ee;
+  font-size: 25px;
+  border-radius: 15px;
+  color: #f8f7ee;
+  margin: 0 auto;
+  height: 50px;
+  width: 50vh;
+  margin-bottom: 30px;
+
+}
+.button-more button:hover{
+  background-color:#f8f7ee ;
+  border: 1px solid #E97777;
+  color: #E97777;
+}
+.product-detail {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  right: 0;
+  background: #f8f7ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: all ease-out 0.5s;
+  transform: translateX(100%);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+  padding: 1em 2em;
+  color:black;
+  font-size: 20px;
+}
+.product-detail button{
+  background-color: #E97777;
+  border: none;
+  color: #f8f7ee;
+  font-size: 15px;
+  border-radius: 30px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.product-detail img{
+  position:fixed;
+}
+.categoria{
+  margin-top: 10px;
+  height: 30px;
+  border: none;
+  background-color: #E97777;
+  color:#f8f7ee;
+  border-radius: 10px;
+}
+.btn{
+  width: 20vh;
+}
+
+.img{
+  height: 100%;
+  background-size: cover;
+  border-radius: 10px;
+}
+.categoria:active{
+  border: 1px solid #E97777;
+
+}
+.product-detail.active {
+  transform: translateX(0);
+}
+.input-group input{
+  height: 25px;
+  width:  90vh;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+  background-color: #FF9F9F;
+  color: black;
+}
+@media screen and (min-width: 40em) and (max-width: 63.9em) {
+  .products--grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+ }
+}
+@media screen and (min-width: 64em) {
+  .products--grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+ }
+}
